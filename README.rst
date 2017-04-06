@@ -53,6 +53,11 @@ Does the code actually work?
     (myenv) $ pip install tox
     (myenv) $ tox
 
+Or::
+
+    (myenv) $ cd $SOURCE_ROOT
+    (myenv) $ python tests/django_runtests.py
+  
 Credits
 -------
 
