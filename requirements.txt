@@ -1,0 +1,2 @@
+Django>=1.8,<1.9
+# Actually this should work for Django 1.9 as well, but 1.9 is end-of-life'd
