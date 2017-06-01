@@ -1,10 +1,5 @@
 from __future__ import unicode_literals
 
-from django.apps.registry import apps as global_apps
-from django.db import migrations
-
-from django.db.migrations.loader import MigrationLoader
-from django.db.migrations.recorder import MigrationRecorder
 from django.db.migrations.state import ProjectState
 from django.db.migrations.executor import MigrationExecutor as DjangoMigrationExecutor
 
@@ -102,7 +97,6 @@ class MigrationExecutor(DjangoMigrationExecutor):
                 if migration in applied_migrations:
                     migration.mutate_state(state, preserve=False)
         return state
-
 
     def _migrate_all_backwards(self, plan, full_plan, fake):
         """
