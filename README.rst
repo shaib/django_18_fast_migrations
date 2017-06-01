@@ -31,7 +31,7 @@ Add it to your `INSTALLED_APPS`:
 
     INSTALLED_APPS = (
         ...
-        'django_18_fast_migrations.apps.Django18FastMigrationsConfig',
+        'django_18_fast_migrations',
         ...
     )
 
