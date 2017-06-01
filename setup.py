@@ -4,11 +4,7 @@ import os
 import re
 import sys
 
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
-
+from setuptools import find_packages, setup
 
 def get_version(*file_paths):
     """Retrieves the version from django_18_fast_migrations/__init__.py"""
@@ -52,9 +48,7 @@ setup(
     author='Shai Berger',
     author_email='shai@platonix.com',
     url='https://github.com/shaib/django_18_fast_migrations',
-    packages=[
-        'django_18_fast_migrations',
-    ],
+    packages=find_packages(exclude=[]),
     include_package_data=False,
     install_requires=[],
     license="BSD",
