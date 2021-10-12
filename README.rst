@@ -13,6 +13,11 @@ django_18_fast_migrations
 
 Fast migrations from Django 1.10 backported into Django 1.8
 
+Archived
+--------
+This library became obsolete when Django 1.8 reached EOL, in April 2018. No further changes are expected.
+
+
 .. commented-out Documentation
    -------------
 
